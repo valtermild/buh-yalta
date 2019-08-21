@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch src/sass/style.scss -o src/css/style1.css",
-    "deploy": "gh-pages -d _site"
+    "deploy": "npx @11ty/eleventy && gh-pages -d _site"
   },
   "author": "",
   "license": "ISC",
