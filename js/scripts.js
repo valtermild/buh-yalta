@@ -387,7 +387,7 @@ var theme = theme || {};
 
 })(jQuery);
 
-jQuery("#contact-form").on("submit", function(event) {
+$("#contact-form").on("submit", function(event) {
     event.preventDefault();
     
     var formData = new FormData(this);
@@ -401,8 +401,8 @@ jQuery("#contact-form").on("submit", function(event) {
         contentType: false,
         processData: false
     }).done(function() {
-        alert('Your mail is sent!');
+        jQuery("#msg").append('Ваше сообщение успешно отправлено!');
     }).fail(function(error) {
-        alert('Oops... ' + JSON.stringify(error));
+		jQuery("#msg").append('Ошибка' + JSON.stringify(error));        
     });
 });
