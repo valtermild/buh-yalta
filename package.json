@@ -1,0 +1,18 @@
+{
+  "name": "buh_yalta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch src\/sass\/style.scss -o src\/css\/style1.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
