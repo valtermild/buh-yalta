@@ -387,7 +387,7 @@ var theme = theme || {};
 
 })(jQuery);
 
-jQuery("contact-form").on("submit", function(event) {
+jQuery("#contact-form").on("submit", function(event) {
     event.preventDefault();
     
     var formData = new FormData(this);
