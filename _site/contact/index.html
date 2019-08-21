@@ -144,9 +144,9 @@
               <div class="service box-shadow hover-line hover-down">
                 <i class="service__icon o-contact-1"></i>
                 <h4 class="service__title">Телефон</h4>
-                <p class="service__text"><a href="tel:+79781304056">+7 978 130 40 56</a></p>
-                <br>  
-                <br>                
+                <p class="service__text"><a href="tel:+79781304056">+7 978 130 40 56</a></p>                
+                <br>   
+                <br>                             
               </div>
             </div>
 
@@ -156,7 +156,7 @@
                 <h4 class="service__title">Email</h4>
                 <p class="service__text"><a href="mailto:uslugiyalta@mail.ru">uslugiyalta@mail.ru</a></p> 
                 <br>  
-                <br>                 
+                <br>                                
               </div>
             </div>
 
@@ -164,7 +164,8 @@
               <div class="service box-shadow hover-line hover-down">
                 <i class="service__icon o-pin-1"></i>
                 <h4 class="service__title">Адрес офиса</h4>
-                <address>г. Ялта, Садовая, 11 (цокольный этаж, офис )</address>
+                <address>г. Ялта, ул. Садовая, 11 (цокольный этаж, офис )</address><br>
+                <p class="service__text">Время работы офиса: Понедельник-Пятница, с 9:00 до 18:00</p>
               </div>
             </div>
 
@@ -183,7 +184,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-5">
               <!-- Contact Form -->
-              <form id="contact-form" class="contact-form" method="post" action="#">
+              <form id="contact-form" class="contact-form">
 
                 <div class="form-group">
                   <input name="name" class="form-group__input" id="name" type="text" placeholder="Имя" >
@@ -209,7 +210,11 @@
                 </div>
 
                 <input type="submit" class="btn btn--lg btn--color btn--wide btn--button" value="Отправить" id="submit-message">
-                <div id="msg" class="message"></div>
+                <br>
+                <br>
+                <div id="alert" class="d-none alert alert-success fade show" role="alert">                    
+                    <strong>Ваше сообщение успешно отправлено!</strong>
+                  </div>
               </form>
             </div>
           </div>
@@ -311,6 +316,20 @@
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/plugins.js"></script>
   <script src="/js/scripts.js"></script>
-    
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(55019446, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55019446" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->  
 </body>
 </html>

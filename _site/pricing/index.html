@@ -630,7 +630,7 @@
               <div class="contact-form-container">
                 <h3 class="mb-32">Оставить сообщение</h3>
                 <!-- Contact Form -->
-                <form id="contact-form" class="contact-form" method="post" action="#">
+                <form id="contact-form" class="contact-form">
 
                   <div class="form-group">
                     <input name="name" class="form-group__input" id="name" type="text" placeholder="Имя" >
@@ -652,7 +652,11 @@
                   </div>
 
                   <input type="submit" class="btn btn--lg btn--color btn--wide btn--button" value="Отправить" id="submit-message">
-                  <div id="msg" class="message"></div>
+                  <br>
+                  <br>
+                  <div id="alert" class="d-none alert alert-success fade show" role="alert">                    
+                    <strong>Ваше сообщение успешно отправлено!</strong>
+                  </div>
                 </form>
               </div>
             </div>
@@ -748,6 +752,20 @@
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/plugins.js"></script>
   <script src="/js/scripts.js"></script>
-    
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(55019446, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55019446" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->  
 </body>
 </html>

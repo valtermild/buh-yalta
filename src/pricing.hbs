@@ -103,7 +103,7 @@ title: "Стоимость бухгалтерских услуг | ООО Пре
               <div class="contact-form-container">
                 <h3 class="mb-32">Оставить сообщение</h3>
                 <!-- Contact Form -->
-                <form id="contact-form" class="contact-form" method="post" action="#">
+                <form id="contact-form" class="contact-form">
 
                   <div class="form-group">
                     <input name="name" class="form-group__input" id="name" type="text" placeholder="Имя" >
@@ -125,7 +125,11 @@ title: "Стоимость бухгалтерских услуг | ООО Пре
                   </div>
 
                   <input type="submit" class="btn btn--lg btn--color btn--wide btn--button" value="Отправить" id="submit-message">
-                  <div id="msg" class="message"></div>
+                  <br>
+                  <br>
+                  <div id="alert" class="d-none alert alert-success fade show" role="alert">                    
+                    <strong>Ваше сообщение успешно отправлено!</strong>
+                  </div>
                 </form>
               </div>
             </div>

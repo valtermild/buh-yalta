@@ -386,3 +386,26 @@ var theme = theme || {};
 	$window.on('scroll', theme.windowOnScroll.init);
 
 })(jQuery);
+
+$("#contact-form").on("submit", function(event) {
+	event.preventDefault();
+	$('[type = submit]').val("Отправляем...");
+    
+    var formData = new FormData(this);
+    formData.append('service_id', 'mail_ru');
+    formData.append('template_id', 'yalta_buh_ru');
+    formData.append('user_id', 'user_ExcPumNz3gi7BoDOOsxv0');
+ 
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+        type: 'POST',
+        data: formData,
+        contentType: false,
+        processData: false
+    }).done(function() {
+		$("#alert").removeClass('d-none');
+		$('[type = submit]').val("Отправить");
+    }).fail(function(error) {
+		$("#alert").text('Ошибка' + JSON.stringify(error)).toggleClass("alert-success alert-danger");
+		$('[type = submit]').val("Отправить");        
+    });
+});
