@@ -403,9 +403,9 @@ $("#contact-form").on("submit", function(event) {
         processData: false
     }).done(function() {
 		$("#alert").removeClass('d-none');
-		$('[type = submit]').attr("disabled", true);
+		$('[type = submit]').attr("disabled", false);
     }).fail(function(error) {
 		$("#alert").text('Ошибка' + JSON.stringify(error)).toggleClass("alert-success alert-danger");
-		$('[type = submit]').attr("disabled", true);        
+		$('[type = submit]').attr("disabled", false);        
     });
 });
