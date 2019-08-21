@@ -401,8 +401,8 @@ $("#contact-form").on("submit", function(event) {
         contentType: false,
         processData: false
     }).done(function() {
-        jQuery("#msg").append('Ваше сообщение успешно отправлено!');
+        $("#alert").removeClass('d-none');
     }).fail(function(error) {
-		jQuery("#msg").append('Ошибка' + JSON.stringify(error));        
+		$("#alert").text('Ошибка' + JSON.stringify(error)).toggleClass("alert-success alert-danger");        
     });
 });
