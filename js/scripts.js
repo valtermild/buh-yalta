@@ -389,7 +389,7 @@ var theme = theme || {};
 
 $("#contact-form").on("submit", function(event) {
 	event.preventDefault();
-	$('[type = submit]').attr("disabled", true);
+	$('[type = submit]').val("Отправляем...");
     
     var formData = new FormData(this);
     formData.append('service_id', 'mail_ru');
@@ -403,9 +403,9 @@ $("#contact-form").on("submit", function(event) {
         processData: false
     }).done(function() {
 		$("#alert").removeClass('d-none');
-		$('[type = submit]').attr("disabled", false);
+		$('[type = submit]').val("Отправить");
     }).fail(function(error) {
 		$("#alert").text('Ошибка' + JSON.stringify(error)).toggleClass("alert-success alert-danger");
-		$('[type = submit]').attr("disabled", false);        
+		$('[type = submit]').val("Отправить");        
     });
 });
