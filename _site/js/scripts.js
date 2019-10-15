@@ -409,3 +409,10 @@ $("#contact-form").on("submit", function(event) {
 		$('[type = submit]').val("Отправить");        
     });
 });
+
+setTimeout(function(){
+	var elem = document.createElement('script');
+	elem.type = 'text/javascript';
+	elem.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac76ebfed5419704f74895e5d693936553e88c1f079f7ebaa602dc2abc0ab6fd4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"';
+	document.getElementById('google-map').appendChild(elem);
+}, 4000);
